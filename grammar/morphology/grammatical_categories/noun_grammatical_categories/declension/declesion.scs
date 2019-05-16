@@ -1,0 +1,46 @@
+declension
+<-sc_node_norole_relation;;
+
+
+declension => nrel_main_idtf:
+[склонение](* <-lang_ru;; *);
+[declension](* <-lang_en;; *);;
+
+
+declension <- rrel_key_sc_element: 
+		... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf: [Определение: склонение] (* <- lang_ru;; *);;
+            => nrel_main_idtf: [Definition: declension] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                ->rrel_example;
+                [Склонение — это изменение существительных по падежам.](*<- lang_ru;;*);;
+                -> rrel_example:
+                [Declination is the change of nouns by case.](*<- lang_en;;*);;
+            *);;
+             <= nrel_using_constants: ...
+            (*
+                ->noun;;
+				->grammatical_case;;
+
+            *);;
+        *);;
+
+
+    declension <= nrel_subdividing: ...
+(*
+  <- explanation;;
+	=> nrel_main_idtf:
+		[ ](*<-lang_ru;; *);;
+ ->first_declension;;
+ ->second_declension;;
+ ->third_declension;;
+ ->indeclinable_noun;;
+ ->heteroclitic_noun;;
+*);;
+
+
+

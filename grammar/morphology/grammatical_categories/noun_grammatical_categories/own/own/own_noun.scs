@@ -1,0 +1,57 @@
+own_noun
+<-sc_node_norole_relation;;
+
+own_noun=>nrel_main_idtf:
+    [имя собственное](* <-lang_ru;; *);
+    [own](* <-lang_en;; *);;
+
+
+own_noun <- rrel_key_sc_element: 
+		... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf: [Определение: имя собственное] (* <- lang_ru;; *);;
+            => nrel_main_idtf: [Definition: own] (* <- lang_en;; *);;
+            <- definition;;
+            <= nrel_sc_text_translation: ...
+            (*
+                ->rrel_example:
+                [имя собственное - существительное, которое представляет название единичного предмета.](*<- lang_ru;;*);;
+                -> rrel_example:
+                [proper name - a noun that represents the name of a single object.](*<- lang_en;;*);;
+            *);;
+             <= nrel_using_constants: ...
+            (*
+                ->noun;;
+            *);;
+        *);;
+        
+
+ own_noun <= nrel_subdividing:
+{
+    anthroponym;
+    toponym;
+    teonym;
+    zoonym
+};;
+
+
+
+own_noun -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [Минск](*<- lang_ru;;*);;
+    *);;
+
+own_noun -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [Республика Беларусь](*<- lang_ru;;*);;
+    *);;
+
+
+own_noun -> rrel_example: ...
+    (*
+        => nrel_main_idtf: 
+            [Нарочь](*<- lang_ru;;*);;
+    *);;
