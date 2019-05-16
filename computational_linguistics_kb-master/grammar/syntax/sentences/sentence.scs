@@ -1,0 +1,170 @@
+sc_node_not_relation
+ -> sentence;;
+
+sentence
+ => nrel_main_idtf: [предложение](* <- lang_ru;; *);
+ => nrel_idtf: [множество предложений](* <- lang_ru;; *);
+ => nrel_idtf: [sentence](* <- lang_en;; *);;
+
+
+sentence
+<= nrel_subdividing: ...
+	(*
+		-> real_modality_sentence;;
+		-> irreal_modality_sentence;;
+
+  		=>nrel_main_idtf:[Разбиение по значению объективной модальности](* <- lang_ru;; *);;
+	*);
+
+<= nrel_subdividing: ...
+	(*
+		-> affirmative_sentence;;
+		-> negative_sentence;;
+
+  		=>nrel_main_idtf:[Разбиение по характеру отношения к действительности](* <- lang_ru;; *);;
+	*);
+
+<= nrel_subdividing: ...
+	(*
+		-> narrative_sentence;;
+		-> interrogative_sentence;;
+		-> imperative_sentence;;
+
+  		=>nrel_main_idtf:[Разбиение по цели высказывания](* <- lang_ru;; *);;
+	*);
+
+<= nrel_subdividing: ...
+	(*
+		-> exclamatory_sentence;;
+		-> not_exclamatory_sentence;;
+
+  		=>nrel_main_idtf:[ Разбиение в зависимости от эмоциональной окраски](* <- lang_ru;; *);;
+	*);
+
+
+
+<= nrel_subdividing: ...
+	(*
+		-> simple_sentence;;
+		-> compound_sentence;;
+
+  		=>nrel_main_idtf:[Разбиение в зависимости от количества предикативных единиц](* <- lang_ru;; *);;
+	*);;
+
+
+
+definition -> ...   
+(*
+  	-> rrel_key_sc_element: sentence;;
+  	=> nrel_main_idtf: [Опр. (предложение)](* <- lang_ru;; *);;
+    	<= nrel_using_constants: ...
+	(*
+		-> language;;
+ 		-> speech_unit;;
+		-> nrel_means_of_thought_formation;;
+		-> nrel_means_of_thought_expression;;
+		-> nrel_means_of_thought_imparting;;
+	*);;
+     	<= nrel_sc_text_translation: ... 
+	(* 
+		-> [Предложение - это грамматически оформленная по законам данного языка, целостная единица речи, 			являющаяся главным средством формирования, выражения и сообщения мысли.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+ 
+   statement -> ...
+(*
+      	-> rrel_key_sc_element: sentence;;
+
+      	=> nrel_main_idtf: [Утв.(предложение, основной признак*, синтаксическая единица, предикативность, объективная модальность, синтаксическое время, грамматическое значение)](* <- lang_ru;; *);;
+      	<= nrel_sc_text_translation: ... 
+	(*
+		-> [Основным признаком предложения как синтаксической единицы является предикативность, 		включающая в себя значения объективной модальности и синтаксического времени (основные 			грамматические значения предложения).](* <- lang_ru;; *);;
+	*);;
+*);;
+   
+
+   statement -> ...
+(*
+      	-> rrel_key_sc_element: sentence;;
+
+      	=> nrel_main_idtf: [Утв.(предложение, интонационная оформленность)](* <- lang_ru;; *);;
+      	<= nrel_sc_text_translation: ... 
+	(*
+		-> [Каждое предложение имеет определенную интонационную оформленность.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+      statement -> ...
+(*
+      	-> rrel_key_sc_element: sentence;;
+
+      	=> nrel_main_idtf: [Утв.(предложение, структура предложения, языковой образец)](* <- lang_ru;; *);;
+      	<= nrel_sc_text_translation: ... 
+	(*
+		-> [В структурном отношении предложение представляет собой реализацию одного из возможных 			языковых образцов.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+      statement -> ...
+(*
+      	-> rrel_key_sc_element: sentence;;
+
+      	=> nrel_main_idtf: [Утв.(предложение, единица коммуникативного плана, часть текста)](* <- lang_ru;; *);;
+      	<= nrel_sc_text_translation: ... 
+	(*
+		-> [Предложение является единицей коммуникативного плана: выступает не само по себе, а как часть 			текста.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+      statement -> ...
+(*
+      	-> rrel_key_sc_element: sentence;;
+
+      	=> nrel_main_idtf: [Утв.(предложение, структура предложения, коммуникативное задание*)](* <- lang_ru;; 		*);;
+      	<= nrel_sc_text_translation: ... 
+	(*
+		-> [Структура предложения определяется коммуникативным заданием.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+      statement -> ...
+(*
+      	-> rrel_key_sc_element: sentence;;
+
+      	=> nrel_main_idtf: [Утв.(предложение, грамматическое значение, грамматическая форма, синтаксическая 		семантика)](* <- lang_ru;; *);;
+      	<= nrel_sc_text_translation: ... 
+	(*
+		-> [Общее грамматическое значение предложения передается с помощью разных грамматических форм, 			которые избираются соответственно нужной синтаксической семантике.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+      statement -> ...
+(*
+      	-> rrel_key_sc_element: sentence;;
+
+      	=> nrel_main_idtf: [Утв.(предложение, синтаксический анализ, грамматически значимая часть, член предложения*)](* <- lang_ru;; *);;
+      	<= nrel_sc_text_translation: ... 
+	(*
+		-> [При синтаксическом анализе предложение подразделяется на грамматически значимые части - члены 			предложения.](* <- lang_ru;; *);;
+	*);;
+*);;
+   
+      statement -> ...
+(*
+	-> rrel_key_sc_element: sentence;;
+
+      	=> nrel_main_idtf: [Утв.(предложение, грамматическая основа, главный член предложения*, член 		  предложения*, подлежащее*, сказуемое*)](* <- lang_ru;; *);;
+      	<= nrel_sc_text_translation: ... 
+	(*
+		-> [Предложение имеет грамматическую основу, которая состоит из главных членов — подлежащего и сказуемого или одного из них.](* <- lang_ru;; *);;
+	*);;
+*);;
+
+sentence
+ -> rrel_example:...
+(*
+	=>nrel_main_idtf: [Солнце уже высоко стояло на чистом небе, но поля еще блестели росой.](*<-lang_ru;;*);;
+
+*);;
+

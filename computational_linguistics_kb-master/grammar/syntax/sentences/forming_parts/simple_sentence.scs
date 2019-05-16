@@ -1,0 +1,44 @@
+sc_node_not_relation
+ -> simple_sentence;;
+
+simple_sentence
+ => nrel_main_idtf: [простое предложение](* <- lang_ru;; *);
+ => nrel_idtf: [множество простых предложений](* <- lang_ru;; *);
+ => nrel_idtf: [simple sentence](* <- lang_en;; *);;
+
+simple_sentence
+
+<= nrel_subdividing: ...
+	(*
+		-> partition_sentence;;
+		-> not_partition_sentence;;
+
+  		=>nrel_main_idtf:[Разбиение в зависимости от синтаксической членимости](* <- lang_ru;; *);;
+	*);;
+
+definition -> ...   
+(*
+     	-> rrel_key_sc_element: simple_sentence;;
+
+	=> nrel_main_idtf: [Опр. (простое предложение)](* <- lang_ru;; *);;
+     	<= nrel_using_constants: ...
+	(*
+		-> sentence;;
+		-> predictive_center;;
+		-> nrel_contain;;	
+		-> predicative_unit;;
+	*);;
+     	<= nrel_sc_text_translation: ... 
+	(* 
+		-> [Простое предложение - предложение, имеющее один организующий его предикативный центр и содержит в себе одну предикативную единицу.](* <- lang_ru;; *);;
+     	*);;
+
+*);;
+
+
+simple_sentence
+ -> rrel_example:...
+(*
+=>nrel_main_idtf: [С вокзала до пристани пришлось идти через весь городок.](*<-lang_ru;;*);;
+*);;
+

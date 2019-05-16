@@ -1,0 +1,33 @@
+sc_node_not_relation
+ -> not_exclamatory_sentence;;
+
+not_exclamatory_sentence
+ => nrel_main_idtf: [невосклицательное предложение](* <- lang_ru;; *);
+ => nrel_idtf: [множество невосклицательных предложений](* <- lang_ru;; *);
+ => nrel_idtf: [not exclamatory sentence](* <- lang_en;; *);;
+
+
+definition -> ...   
+(*
+     	-> rrel_key_sc_element: not_exclamatory_sentence;;
+
+	=> nrel_main_idtf: [Опр. (невосклицательное предложение)](* <- lang_ru;; *);;
+     	<= nrel_using_constants: ...
+	(*
+		-> sentence;;
+		-> rrel_emotional_coloring;;
+		-> neutrality;;	
+	*);;
+     	<= nrel_sc_text_translation: ... 
+	(* 
+		-> [Невосклицательное предложение - предложение с нейтральной эмоциональной окраской.](* <- lang_ru;; *);;
+     	*);;
+
+*);;
+
+not_exclamatory_sentence
+ -> rrel_example:...
+(*
+=>nrel_main_idtf: [У Блока было все, что создает великого поэта.](*<-lang_ru;;*);;
+*);;
+
